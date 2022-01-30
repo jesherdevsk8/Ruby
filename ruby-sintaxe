@@ -1,0 +1,38 @@
+--- Sintaxe Ruby ---
+o comando irb abre o terminal
+3+2
+3*2
+3**2 < somar raiz quadrada
+
+Math.sqrt(9) #achando raiz quadrada de 9
+
+def var(nome)
+	puts "Olá #{nome}"
+end
+
+> var("jesher")
+
+def var(nome = "jesher")
+	puts "Olá #{nome.captalize}!"
+end
+
+> var
+Olá Mundo!
+ => nil 
+
+> var "Minelli"
+Olá Jesher!
+ => nil 
+ 
+class Anfitriao
+	def initialize(nome = "Mundo")
+		@nome = nome
+	end
+	def diz_ola
+		@nome "Olá #{@nome}"
+	end
+	def diz_adeus
+		puts "Adeus #{@nome}, volta sempre."
+	end
+end
+
