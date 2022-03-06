@@ -18,3 +18,10 @@ c.save
 OU
 
 c = Coin.create!(description: "Nome", acronym: "Sigla", url_image: "https// ")
+
+Relacionamento entre as tabelas coins e mining_types
+c = Coin.find(1)
+m = MiningType(1)
+
+c.mining_type = m
+

@@ -10,3 +10,12 @@ retornar migration
 rails db:rollback
 
 rails db:migrate
+
+adicionar coluna na tabela já em produção / migration stand alone
+
+ex: bin/rails generate migration AddPartNumberToProducts part_number:string
+
+bin/rails g migration AddMiningTypeToCoins mining_type:referenceso
+
+rails db:migrate
+
