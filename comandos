@@ -1,0 +1,12 @@
+rails dev:setup
+
+criar
+rails g scaffold Cadastro nome:string telefone:string idade:integer endereco:string
+
+deletar
+rails d scaffold Cadastro
+
+retornar migration
+rails db:rollback
+
+rails db:migrate

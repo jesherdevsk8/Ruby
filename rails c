@@ -1,0 +1,20 @@
+Coin.last
+Coin.all
+Coin.first
+Coin
+=> Coin(id: integer, description: string, acronym: string, url_image: string, created_at: datetime, updated_at: datetime)
+
+c =  Coin.new
+c.description = "Nome"
+c.acronym = "Sigla"
+c.url_image = "https// "
+c.save
+
+OU
+
+c = Coin.new(description: "Nome", acronym: "Sigla", url_image: "https// ")
+c.save
+
+OU
+
+c = Coin.create!(description: "Nome", acronym: "Sigla", url_image: "https// ")
