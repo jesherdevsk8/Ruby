@@ -3,7 +3,7 @@
 print "Digite o seu salário "
 sal = gets.chomp.to_f
 
-#puts "Seu salário atualizado é: " + (sal * 1.10).to_s
+puts "Seu salário atualizado é: " + (sal * 1.10).to_s
 
 if sal < 1200
 	puts "Você ganha menos que um salário minimo"
