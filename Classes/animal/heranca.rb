@@ -1,0 +1,3 @@
+class ClasseFilha < ClassePai
+
+end
