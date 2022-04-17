@@ -12,7 +12,7 @@ class Pessoas
         return %(Nome: #{@nome} \nCPF: #{@cpf} \nEndereço: #{@endereco} \nCidade: #{@cidade} \nEstado: #{@estado} \nBairro: #{@bairro})
     end
 
-    def Jason
+    def Json
         puts %({\n"Nome": "#{@nome}", \n"CPF": "#{@cpf}", \n"Endereço": "#{@endereco}"\n})
     end
 end
@@ -31,7 +31,7 @@ class Fornecedores
         return %(\nNome: #{@nome} \nCNPJ: #{@cnpj} \nEndereco: #{@endereco} \nCidade: #{@cidade} \nEstado: #{@estado} \nBairro: #{@bairro})
     end
 
-    def JasonFornecedor
+    def JsonFornecedor
         puts %({\n"Nome": "#{@nome}", \n"CNPJ": "#{@cnpj}", \n"Endereço": "#{@endereco}"\n})
     end
 end
