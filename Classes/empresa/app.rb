@@ -16,8 +16,8 @@ cliente1 = Cliente.new(nome: "Jesher Minelli Alves", cpf: "456.321.234-43", ende
 cliente2 = Cliente.new(nome: "Orivaldo Alves", cpf: "034.234.654-23", endereco: "Rua Voluntário Antonio de Campos nº 391",\
 							cidade: "Altinópolis", estado: "SP", bairro: "Centro", limite: "4500", prazo: "700")											 
 
-
-puts "\n---- Dados"
+puts "DADOS"
+puts "#{'==='* 10}"
 dados = [fornecedor1.MostrarTela, fornecedor2.MostrarTela, cliente1.Mostrar, cliente2.Mostrar]
 dados.each
 

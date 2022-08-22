@@ -18,4 +18,4 @@ def extract_zip(file, destination)
 end
 
 # Usage
-#extract_zip(file_path, destination)
+extract_zip(file_path, destination)
