@@ -3,7 +3,7 @@
 
 require 'zip'
 
-file_path   = "/home/jesher/Downloads/Desktop.zip"
+file_path   = "/home/jesher/Downloads/Hack.zip"
 destination = "/tmp/extract_zip"
 
 def extract_zip(file, destination)
