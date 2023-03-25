@@ -10,7 +10,7 @@ def encrypt(argv_pass)
 
 	stdout_str, exit_code = Open3.capture2(cmd, :stdin_data=>result)
 	password	= stdout_str.split[0]
-	encryptpass	= Base64.encode64(password).strip
+	encryptpass	= Base64.strict_encode64(password)
 	return encryptpass
 end
 
