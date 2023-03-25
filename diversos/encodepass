@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# Jesher Minelli <jesherdevsk8@gmail.com> - sáb 25 mar 2023
+
+require 'base64'
+require 'open3'
+
+def encrypt(argv_pass)
+	cmd = "echo #{argv_pass} | md5sum"
+	result = 'result goes here'
+
+	stdout_str, exit_code = Open3.capture2(cmd, :stdin_data=>result)
+	password	= stdout_str.split[0]
+	encryptpass	= Base64.encode64(password).strip
+	return encryptpass
+end
+
+if ARGV.size == 1
+	argv_pass = ARGV[0]
+	puts encrypt(argv_pass)
+else
+	puts 'Need one password'
+end
